@@ -163,6 +163,24 @@ const dobleDivisibleFlecha = (z) => (num%4==0)||(num%9==0) ? console.log("Verdad
  * Consideraciones: utilizar la estructura switch
  */
 
+function peliDelDia (pelicula){
+    switch(pelicula.toLowerCase()){
+        case "accion": console.log("Te recomiendo duro de matar 1")
+        break;
+        case "drama": console.log("Deberias de ver Roma")
+        break;
+        case "comedia": console.log("Conoces la historia de pagliacci el payaso?")
+        break;
+        case "romance": console.log("Definitivamente antes de ti es una buena sugerencia")
+        break;
+        case "suspenso": console.log("Oppenheimer cuenta como suspenso? Claro que si!")
+        break;
+        case "terror": console.log("El genero de terror esta muerto pero bueno... Cualquiera de saw")
+        break;
+        default:
+        console.log("Eso no esta en mi catalogo, intenta de nuevo")
+    }
+}
 
 
 /** Ejercicio 8
