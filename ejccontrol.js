@@ -100,7 +100,6 @@ function dobleDivisible (z){
 const dobleDivisibleFlecha = (z) => (num%4==0)||(num%9==0) ? console.log("Verdadero") : console.log("Falso")
 
 
-
 /** Ejercicio 6
  * 
  * Crear un programa que funcione como una calculadora simple
@@ -122,40 +121,30 @@ const dobleDivisibleFlecha = (z) => (num%4==0)||(num%9==0) ? console.log("Verdad
  * Consideraciones: utilizar la estructura switch
  */
 
-/*function  (operacion)
-    switch( operacion.toLowerCase()){
-        case "suma": console.log("Ingrese los numeros a sumar")
-        let operacion = (a + b)
-        break;
-        case "verde": console.log("Ttu color es verde")
-        break;
-        case "azul": console.log ("Tu color es azul")
-        break;
-        default:
-        console.log("No conozco ese color")
-        break;
-        }*/
-     
-// function abacoModerno (calculo){
-//     switch(calculo .tolowerCase()){
-//         case "suma": console.log("Usted esta realizando una suma")
-//         break;
-//       }
-//     }
-
-    function adivinaColor(color){
-        switch(color .toLowerCase()){
-            case "suma": console.log("Tu color es suma")
+    function abacoModerno (a, operacion, b){
+        let resultado;
+        switch(operacion){
+            case "+":
+            resultado = a + b; 
+            console.log(`El resultado de tu suma es: ${resultado}`)
             break;
-            case "verde": console.log("Ttu color es verde")
+            case "-":
+            resultado = a - b; 
+            console.log(`El resultado de tu resta es: ${resultado}`)
             break;
-            case "azul": console.log ("Tu color es azul")
+            case "*":
+            resultado = a * b; 
+            console.log(`El resultado de tu multiplicacion es: ${resultado}`)
+            break;
+            case "/":
+            resultado = a / b; 
+            console.log(`El resultado de tu division es: ${resultado}`)
             break;
             default:
-            console.log("No conozco ese color")
-            break;
-            }
+            console.log("Error")
         }
+    }
+
 
 /** Ejercicio 7
  * 
