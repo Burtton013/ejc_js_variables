@@ -16,7 +16,7 @@ function mayoriaEdad (x){
     }
 }
 
-const mayoriaEdadFlecha = (x) => (x>=18) ? console.log(`Usted tiene ${x} años de edad, puede votar.`) : console.log(`Usted tiene ${x} años de edad, usted no puede votar.`);
+const MAYORIA_EDAD_FLECHA = (x) => (x>=18) ? console.log(`Usted tiene ${x} años de edad, puede votar.`) : console.log(`Usted tiene ${x} años de edad, usted no puede votar.`);
 
 
 /** Ejercicio 2
@@ -72,7 +72,7 @@ function numeroDivisible (num){
 }
 }
 
-const numDivisibleFlecha = (num) => (num%7==0)&&(num%8==0) ? console.log("Verdadero") : console.log("Falso")
+const NUM_DIVISIBLE_FLECHA = (num) => (num%7==0)&&(num%8==0) ? console.log("Verdadero") : console.log("Falso")
 
 
 /** Ejercicio 5
@@ -97,7 +97,7 @@ function dobleDivisible (z){
 }
 }
 
-const dobleDivisibleFlecha = (z) => (num%4==0)||(num%9==0) ? console.log("Verdadero") : console.log("Falso")
+const DOBLE_DIVISIBLE_FLECHA = (z) => (num%4==0)||(num%9==0) ? console.log("Verdadero") : console.log("Falso")
 
 
 /** Ejercicio 6
