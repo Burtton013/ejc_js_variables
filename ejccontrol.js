@@ -45,8 +45,6 @@ function promedio (a, b, c , d){
 } 
 
 
-
-
 /** Ejercicio 4
  * 
  * Desarrolla un programa que evalue si un numero es divisible
@@ -200,7 +198,20 @@ function peliDelDia (pelicula){
 
 
 
-
+function interfazCajero (interfaz)
+{console.log("Ingrese el tipo de movimiento que desee realizar.")
+if(interfaz == "Retirar dinero"){
+        console.log ("Ingrese la cantidad de dinero a retirar")
+     } else if (interfaz == "Transferencia"){
+        console.log("Ingrese la cantidad de dinero que quiere transferir")
+     }else if (interfaz == "Deposito"){
+         console;log ("Ingrese el numero de cuenta y la cantidad de dinero que desee depostiar")
+     } else if (interfaz== "Pago de servicios"){
+         console.log ("Seleccione el tipo de servisio que desee pagar")
+     } else{
+         console.log("Error, esa opcion no se encuentra disponible.")
+     }
+ }
 
 
 /** Ejercicio 9
@@ -220,10 +231,33 @@ function peliDelDia (pelicula){
  * 
  */
 
-
-
-
-
+function conversorDivisas (c, divisa){
+    let conversion
+    switch(divisa.toLowerCase()){
+        case "dolares": 
+        conversion = c / 16.87
+        console.log(`${c} de pesos son un total de ${conversion} dolares`)
+        break;
+        case "euros": 
+        conversion = c / 18.50
+        console.log(`${c} de pesos son un total de ${conversion} euros`)
+        break;
+        case "yene japones": 
+        conversion = c / 0.12
+        console.log(`${c} de pesos son un total de ${conversion} yenes japoneses`)
+        break;
+        case "libra esterlina": 
+        conversion = c / 21.40
+        console.log(`${c} de pesos son un total de ${conversion} libras esterlinas`)
+        break;
+        case "franco suizo": 
+        conversion = c / 19.70
+        console.log(`${c} de pesos son un total de ${conversion} franco suizos`)
+        break;
+        default:
+            console.log("Ingrese una divisa valida")
+    }
+}
 
 /** Ejercicio 10
  * 
@@ -238,3 +272,15 @@ function peliDelDia (pelicula){
  * Consideracion: utilizar la estructura if-else
  * 
  */
+
+function promo (a, codigo){
+    descuento = 10*a/100
+    total = a - descuento
+    //total = a - descuento
+    if (codigo === "DESCUENTO10"){
+        console.log(`Usted tiene un 10% de descuento. El total de su compra es de ${total}`)
+    } else{
+        console.log("El codigo no es valido.")
+    }
+}
+

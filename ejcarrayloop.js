@@ -104,10 +104,35 @@ Example:
 - `onlineStatus(['mockIng99', 'J0eyPunch', 'glassedFer'])` should return `'mockIng99, J0eyPunch and 1 more online'`.
 */
 
+/**
+ * 1, Obtener la cantidad total de ususarios osea "n"
+ * 2. Calcular los susuarios restantes eliminando del total los primeros dos
+ * 3. Obtener los primeros dos 
+ * 4. Imprimir mensaje
+ */
+const userData = ("mockIng99", "J0eyPunch", "glassedFer", "anon123")
 
+function getLength (arr){
+    return arr.length;
+}
 
+function calcularRemaining (total){
+    return total - 2;
+}
+function getUser (arr){
+    const userData = arr[0] + arr[1]
+    return userData
+}
+function onlineStatus1 (arr){
+    const total = getLength(arr)
+    const rest = calcularRemaining (total);
+    const firstUsers= getUser(arr);
+    console.log(`Users: ${firstUsers}, and ${rest} are online`);
+}
 
-/**ARRA OF MULTIPLES
+onlineStatus1(userData)
+
+/**ARRAY OF MULTIPLES
  
 Create a function that takes two parameters (number, length) and returns an array of length containing multiples of the number.
 Examples:
